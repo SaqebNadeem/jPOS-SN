@@ -12,7 +12,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
     @Override
     public int prepare(long l, Serializable serializable) {
 
-        return ABORTED;
+        return PREPARED;
     }
     @Override
     public void commit(long l, Serializable serializable) {
