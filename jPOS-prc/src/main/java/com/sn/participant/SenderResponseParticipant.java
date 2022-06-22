@@ -21,6 +21,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
         ISOMsg respMsg = ctx.get(Constants.REQUEST_KEY);
         try {
             respMsg.setResponseMTI();
+          //  respMsg.set(49,(String) null); example for how to not echo a field in the response
         } catch (ISOException e) {
             throw new RuntimeException(e);
         }
