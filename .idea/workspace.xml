@@ -4,27 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55c53de-6b7d-448f-9d5f-1e64822b6aef" name="Changes" comment="nothing">
+    <list default="true" id="e55c53de-6b7d-448f-9d5f-1e64822b6aef" name="Changes" comment="jPos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/constant/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/maintest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/maintest/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPOS-prc/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPOS-prc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPOS-prc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/dist/deploy/00_logger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/dist/deploy/00_logger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/listener/ServerApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/listener/ServerApplicationListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/AuthorizationRequestParticipant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/AuthorizationRequestParticipant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/CheckCurrencyParticipant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/CheckCurrencyParticipant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/SenderResponseParticipant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/SenderResponseParticipant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/selector/Selector.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/selector/Selector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/resources/deploy/000_moger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/resources/deploy/503_Transaction_Manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/resources/deploy/503_Transaction_Manager.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/constant/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/constant/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/maintest/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/maintest/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/listener/ServerApplicationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/listener/ServerApplicationListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/participant/AuthorizationRequestParticipant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/participant/AuthorizationRequestParticipant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/participant/CheckCurrencyParticipant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/participant/CheckCurrencyParticipant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/participant/SenderResponseParticipant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/participant/SenderResponseParticipant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/selector/Selector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/selector/Selector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/deploy/000_moger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/deploy/503_Transaction_Manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/deploy/503_Transaction_Manager.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +30,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="21ff7240-e4ac-466b-88ff-d7764542fb54" />
+        <option name="url" value="https://github.com/SaqebNadeem/jPOS" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/jpos/jpos/2.1.7/jpos-2.1.7-sources.jar!/org/jpos/q2/Q2.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/jpos/jpos/2.1.7/jpos-2.1.7-sources.jar!/org/jpos/q2/QBeanSupport.java" root0="FORCE_HIGHLIGHTING" />
@@ -51,7 +47,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2AF53VL58IxtGpzYPlEE1CvDKYV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,18 +57,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowGit.ShowToolbar": "false",
-    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/FirstJpos/jPOS-prc/src/main/resources/deploy",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.reader.mode"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowGit.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/FirstJpos/jPOS-prc/src/main/resources/deploy&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\FirstJpos\jPOS-prc\src\main\resources\deploy" />
@@ -87,7 +84,7 @@
       <recent name="com.host" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.host.Main">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client Test" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -107,32 +104,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.host.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.host.Main" />
-      <module name="FirstJpos" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jPOS-prc/src/main/resources/deploy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.host.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client Test" />
-      <item itemvalue="Application.com.host.Main" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.com.host.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Dell\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e55c53de-6b7d-448f-9d5f-1e64822b6aef" name="Changes" comment="" />
@@ -155,7 +135,35 @@
       <option name="project" value="LOCAL" />
       <updated>1655358543491</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nothing">
+      <created>1655878114604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655878114604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="jPos">
+      <created>1655878144021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655878144021</updated>
+    </task>
+    <task id="LOCAL-00005" summary="jPos">
+      <created>1655878252825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655878252825</updated>
+    </task>
+    <task id="LOCAL-00006" summary="jPos">
+      <created>1655878397155</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655878397155</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
+    <MESSAGE value="jPos" />
+    <option name="LAST_COMMIT_MESSAGE" value="jPos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

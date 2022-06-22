@@ -16,6 +16,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
     }
     @Override
     public void commit(long l, Serializable serializable) {
+
         Context ctx = (Context) serializable;
         ISOMsg respMsg = ctx.get(Constants.REQUEST_KEY);
         try {
@@ -44,7 +45,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
     }
     @Override
     public void abort(long l, Serializable serializable) {
-        System.out.println("network error sender response participant");
+
         Context ctx = (Context)serializable;
         ISOMsg respMsg = ctx.get(Constants.REQUEST_KEY);
         try {

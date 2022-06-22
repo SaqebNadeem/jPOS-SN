@@ -26,8 +26,8 @@ public class ServerApplicationListener implements ISORequestListener,Configurabl
         ISOMsg respMsg = (ISOMsg)isoMsg.clone();
 
         context.put(Constants.REQUEST_KEY,isoMsg);//puts an Object in the transient Map
-        context.put(Constants.RESPONSE_KEY,respMsg);
-        context.put(Constants.RESOURCE_KEY,isoSource);
+        context.put(Constants.RESPONSE_KEY,respMsg);//so we can use it to modify in sender-response
+        context.put(Constants.RESOURCE_KEY,isoSource);//without changing the original iso-msg
         space.out(queueN,context,timeout);//throwing into space is now accessible to the txnmgr.xml
         return true;
     }

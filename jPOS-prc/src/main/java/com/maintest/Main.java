@@ -1,5 +1,6 @@
 package com.maintest;
 
+import com.Filter.DelayFilter;
 import org.jpos.iso.*;
 import org.jpos.iso.channel.ASCIIChannel;
 import org.jpos.iso.packager.ISO87APackager;
@@ -13,7 +14,9 @@ public class Main  {
     public static void main(String[] args) throws IOException, ISOException {
         Logger logger = new Logger();
         logger.addListener(new SimpleLogListener(System.out));
-        ISOChannel channel = new ASCIIChannel("localhost",8000,new ISO87APackager());
+        FilteredChannel channel = new ASCIIChannel("localhost",8000,new ISO87APackager());
+        DelayFilter delayFilter = new DelayFilter(2500);//added channel-Filter -- 5 seconds
+        channel.addFilter(delayFilter);
         ((LogSource)channel).setLogger(logger,"channel");
         channel.connect();
 
