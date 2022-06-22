@@ -3,7 +3,6 @@ package com.sn.listener;
 import com.constant.Constants;
 import org.jpos.core.Configurable;
 import org.jpos.core.Configuration;
-import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISORequestListener;
 import org.jpos.iso.ISOSource;
@@ -25,15 +24,11 @@ public class ServerApplicationListener implements ISORequestListener,Configurabl
         Space<String,Context> space = SpaceFactory.getSpace(spaceN);
 
         ISOMsg respMsg = (ISOMsg)isoMsg.clone();
-        try {
-            respMsg.setResponseMTI();
-        } catch (ISOException e) {
-            throw new RuntimeException(e);
-        }
-        context.put(Constants.REQUEST_KEY,isoMsg);
+
+        context.put(Constants.REQUEST_KEY,isoMsg);//puts an Object in the transient Map
         context.put(Constants.RESPONSE_KEY,respMsg);
         context.put(Constants.RESOURCE_KEY,isoSource);
-        space.out(queueN,context,timeout);//throwing into space
+        space.out(queueN,context,timeout);//throwing into space is now accessible to the txnmgr.xml
         return true;
     }
 }

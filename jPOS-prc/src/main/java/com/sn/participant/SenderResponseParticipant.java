@@ -25,15 +25,11 @@ public class SenderResponseParticipant implements TransactionParticipant {
         }
         String bit38 = respMsg.getString(38);
         String bit39 = respMsg.getString(39);
-        String bit49 = respMsg.getString(49);
         if (bit38==null) {
             respMsg.set(38, "060000");
         }
         if (bit39==null) {
             respMsg.set(39, "00");
-        }
-        if (bit49.equals("360")) {
-            respMsg.set(49, "360");
         }
         ctx.put(Constants.RESPONSE_KEY, respMsg);
         ISOSource source = ctx.get(Constants.RESOURCE_KEY);
@@ -58,21 +54,16 @@ public class SenderResponseParticipant implements TransactionParticipant {
         }
         String bit38 = respMsg.getString(38);
         String bit39 = respMsg.getString(39);
-        String bit49 = respMsg.getString(49);
+//        String bit49 = respMsg.getString(49);
         if(bit38==null || bit38.equals("060000")){
             respMsg.set(38,"060066");
-            boolean rs = respMsg.isIncoming();
-            System.out.println(rs+"  sender response abort method");
         }
         if(bit39==null || bit39.equals("00")){
             respMsg.set(39,"06");
         }
-           if(!bit49.equals("360")){
-               respMsg.set(49,"009");
-           }
-           if(bit49.equals("360")){
-               respMsg.set(49,"360");
-           }
+//        if(!bit49.equals("360")){
+//            respMsg.set(49,"006");
+//        }
         ctx.put(Constants.RESPONSE_KEY,respMsg);
         ISOSource source = ctx.get(Constants.RESOURCE_KEY);
         ISOMsg msgResp = ctx.get(Constants.RESPONSE_KEY);

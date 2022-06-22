@@ -1,4 +1,4 @@
-<txnmgr name="MyTM" logger="Q2" class="org.jpos.transaction.TransactionManager">
+<txnmgr  logger="Q2" class="org.jpos.transaction.TransactionManager">
     <property name="space" value="transient:default" />
     <property name="queue" value="TXNQueue" />
     <property name="sessions" value="5" />
@@ -6,18 +6,22 @@
     <property name="profiler" value="true" />
 
     <participant class="com.sn.selector.Selector" name="Selector" logger="Q2">
-        <property name="0200" value="Sender Transaction" />
+        <property name="0100" value="Sender Authorization" />
+        <property name="0200" value="Sender Financial" />
         <property name="0800" value="Sender Network" />
     </participant>
 
-    <group name="Transaction">
-        <participant class="com.sn.participant.AuthorizationRequestParticipant" logger="Q2" />
-        <participant class="com.sn.participant.TransactionResponseParticipant" logger="Q2" />
+    <group name="Financial">
+        <participant class="com.sn.participant.TransactionResponseParticipant" logger="Q2"/>
+        <participant class="com.sn.participant.CheckCurrencyParticipant" logger="Q2"/>
+    </group>
+
+    <group name="Authorization">
+        <participant class="com.sn.participant.AuthorizationRequestParticipant" logger="Q2"/>
     </group>
 
     <group name="Network">
         <participant class="com.sn.participant.NetworkParticipant" logger="Q2" />
-        <participant class="com.sn.participant.CheckCurrencyParticipant" logger="Q2" />
     </group>
 
     <group name="Sender">
