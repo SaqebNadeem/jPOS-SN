@@ -12,6 +12,10 @@ public class SenderResponseParticipant implements TransactionParticipant {
     @Override
     public int prepare(long l, Serializable serializable) {
 
+//        Context ctx = (Context) serializable;
+//        ISOMsg respMsg = ctx.get(Constants.REQUEST_KEY)
+//        example for how to not echo a field in the response
+//        respMsg.set(49,(String) null);
         return PREPARED;
     }
     @Override

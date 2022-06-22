@@ -4,7 +4,6 @@ import org.jpos.iso.ISOChannel;
 import org.jpos.iso.ISOFilter;
 import org.jpos.iso.ISOMsg;
 import org.jpos.util.LogEvent;
-
 public class DelayFilter implements ISOFilter{
     private int delay;
     public DelayFilter(){

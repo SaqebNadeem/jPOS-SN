@@ -13,7 +13,7 @@ public class ServerApplicationListener implements ISORequestListener,Configurabl
     private Configuration configuration;
     @Override
     public void setConfiguration(Configuration configuration) {
-        this.configuration = configuration;
+        this.configuration = configuration;//this method is basically used to update the configuration variable
     }
     @Override
     public boolean process(ISOSource isoSource, ISOMsg isoMsg) {

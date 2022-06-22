@@ -10,6 +10,7 @@ import org.jpos.util.SimpleLogListener;
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
+
 public class Main  {
     public static void main(String[] args) throws IOException, ISOException {
         Logger logger = new Logger();
@@ -22,7 +23,7 @@ public class Main  {
 
         ISOMsg isoMsg = new ISOMsg();
         HashMap<String,String> hm48 = new HashMap<String, String>();
-        isoMsg.set(0,"0800");
+        isoMsg.set(0,"0200");
         isoMsg.set(3,"39000");
         isoMsg.set(4,"000000000000");
         isoMsg.set(7,ISODate.getDate(new Date()));
@@ -37,7 +38,7 @@ public class Main  {
         hm48.put("037","9837293");
         hm48.put("051","4872354");
         isoMsg.set(48, String.valueOf(hm48));
-        isoMsg.set(49,"460");
+        isoMsg.set(49,"360");
 
         channel.send(isoMsg);
         channel.receive();
