@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55c53de-6b7d-448f-9d5f-1e64822b6aef" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/listener/ServerApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/listener/ServerApplicationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/SenderResponseParticipant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jPOS-prc/src/main/java/com/sn/participant/SenderResponseParticipant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/maintest/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/maintest/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/listener/ServerApplicationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/listener/ServerApplicationListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/participant/SenderResponseParticipant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/participant/SenderResponseParticipant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/selector/Selector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/selector/Selector.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +85,7 @@
       <recent name="com.host" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Client Test">
     <configuration name="Client Test" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -201,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655984884901</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1656313045949</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656313045949</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
