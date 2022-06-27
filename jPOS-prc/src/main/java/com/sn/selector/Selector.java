@@ -17,10 +17,10 @@ public class Selector implements GroupSelector,Configurable{
     @Override
     public String select(long l, Serializable serializable) {
         Context ctx = (Context)serializable;
-        ISOMsg resIsoMsg = ctx.get(Constants.REQUEST_KEY);//getting the req key String that is req MTI & casting it into ISOMsg
+        ISOMsg isoMsg = ctx.get(Constants.REQUEST_KEY);//getting the req key String that is req MTI & casting it into ISOMsg
         String selector = "";
         try {
-            selector = configuration.get(resIsoMsg.getMTI());//getting MTI from the space\or\what we earlier have mentioned in main() which decides the participant
+            selector = configuration.get(isoMsg.getMTI());//getting MTI from the space\or\what we earlier have mentioned in main() which decides the participant
         } catch (ISOException e) {
             e.printStackTrace();
         }

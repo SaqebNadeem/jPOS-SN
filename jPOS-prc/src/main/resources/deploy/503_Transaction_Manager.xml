@@ -9,6 +9,7 @@
         <property name="0100" value="Sender Authorization" />
         <property name="0200" value="Sender Financial" />
         <property name="0800" value="Sender Network" />
+        <property name="0420" value="Sender Reversal" />
     </participant>
 
     <group name="Financial">
@@ -22,6 +23,10 @@
 
     <group name="Network">
         <participant class="com.sn.participant.NetworkParticipant" logger="Q2" />
+    </group>
+
+    <group name="Reversal">
+        <participant class="com.sn.participant.ReversalAdviceParticipant" logger="Q2"/>
     </group>
 
     <group name="Sender">

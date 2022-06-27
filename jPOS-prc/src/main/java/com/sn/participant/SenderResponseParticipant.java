@@ -15,6 +15,14 @@ public class SenderResponseParticipant implements TransactionParticipant {
 //        ISOMsg respMsg = ctx.get(Constants.REQUEST_KEY)
 //        example for how to not echo a field in the response
 //        respMsg.set(49,(String) null);
+        Context ctx = (Context) serializable;
+        ISOMsg respMsg = ctx.get(Constants.REQUEST_KEY);
+        try {
+            respMsg.setResponseMTI();
+        } catch (ISOException e) {
+            e.printStackTrace();
+        }
+        ctx.put(Constants.RESPONSE_KEY,respMsg);
         return PREPARED;
     }
     @Override
@@ -32,7 +40,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
         }
         ctx.put(Constants.RESPONSE_KEY, respMsg);
         ISOSource source = ctx.get(Constants.RESOURCE_KEY);
-        //since we cannot create multiple channels ISOSource obj defines where to send the reply
+        //since we cannot create multiple channels ISOSource obj defines where to send the response ISOMsg
         ISOMsg msgResp = ctx.get(Constants.RESPONSE_KEY);
         try {
             source.send(msgResp);
@@ -51,7 +59,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
         String bit39 = respMsg.getString(39);
 //        String bit49 = respMsg.getString(49);
         if(bit38==null || bit38.equals("060000")){
-            respMsg.set(38,"060066");
+            respMsg.set(38,"060006");
         }
         if(bit39==null || bit39.equals("00")){
             respMsg.set(39,"06");
@@ -61,6 +69,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
 //        }
         ctx.put(Constants.RESPONSE_KEY,respMsg);
         ISOSource source = ctx.get(Constants.RESOURCE_KEY);
+        //since we cannot create multiple channels ISOSource obj defines where to send the response ISOMsg
         ISOMsg msgResp = ctx.get(Constants.RESPONSE_KEY);
         try {
             source.send(msgResp);

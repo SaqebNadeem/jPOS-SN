@@ -9,7 +9,7 @@ public class AuthorizationRequestParticipant implements TransactionParticipant {
     @Override
     public int prepare(long id, Serializable serializable) {
         Context ctx = (Context)serializable;
-        ISOMsg respMsg = (ISOMsg)ctx.get(Constants.RESPONSE_KEY);
+        ISOMsg respMsg = ctx.get(Constants.RESPONSE_KEY);
         respMsg.set(38,"060000");
         ctx.put(Constants.RESPONSE_KEY,respMsg);
         return PREPARED;

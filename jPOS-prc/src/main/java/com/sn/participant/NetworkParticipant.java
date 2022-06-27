@@ -9,7 +9,7 @@ public class NetworkParticipant implements TransactionParticipant{
     @Override
     public int prepare(long l, Serializable serializable) {
         Context ctx = (Context)serializable;
-        ISOMsg respMsg = (ISOMsg)ctx.get(Constants.RESPONSE_KEY);
+        ISOMsg respMsg = ctx.get(Constants.RESPONSE_KEY);
         respMsg.set(39,"00");
         ctx.put(Constants.RESPONSE_KEY,respMsg);
         return PREPARED;

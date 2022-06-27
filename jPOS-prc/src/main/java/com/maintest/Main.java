@@ -16,7 +16,7 @@ public class Main  {
         Logger logger = new Logger();
         logger.addListener(new SimpleLogListener(System.out));
         FilteredChannel channel = new ASCIIChannel("localhost",8000,new ISO87APackager());
-        DelayFilter delayFilter = new DelayFilter(2500);//added channel-Filter -- 5 seconds
+        DelayFilter delayFilter = new DelayFilter(1500);//added channel-Filter -- 1.5 seconds
         channel.addFilter(delayFilter);
         ((LogSource)channel).setLogger(logger,"channel");
         channel.connect();
@@ -37,8 +37,8 @@ public class Main  {
         hm48.put("083","846239");
         hm48.put("037","9837293");
         hm48.put("051","4872354");
-        isoMsg.set(48, String.valueOf(hm48));
-        isoMsg.set(49,"360");
+        isoMsg.set(48, String.valueOf(hm48));//adding tags
+        isoMsg.set(49,"890");
 
         channel.send(isoMsg);
         channel.receive();

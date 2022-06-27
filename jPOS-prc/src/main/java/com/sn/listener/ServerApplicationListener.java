@@ -3,7 +3,6 @@ package com.sn.listener;
 import com.constant.Constants;
 import org.jpos.core.Configurable;
 import org.jpos.core.Configuration;
-import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISORequestListener;
 import org.jpos.iso.ISOSource;
@@ -17,7 +16,6 @@ import org.jpos.transaction.Context;
 // the class Q2 is responsible for connecting
 // to the QServer as its QBean is in resources/deploy directory
 
-// this listener is called by listener.xml
 public class ServerApplicationListener implements ISORequestListener,Configurable{
     private Configuration configuration;
     @Override
@@ -35,15 +33,11 @@ public class ServerApplicationListener implements ISORequestListener,Configurabl
         Space<String,Context> space = SpaceFactory.getSpace(spaceN);
 
         ISOMsg respMsg = (ISOMsg)isoMsg.clone();
-        try {
-            respMsg.setResponseMTI();
-        } catch (ISOException e) {
-            throw new RuntimeException(e);
-        }
 
         context.put(Constants.REQUEST_KEY,isoMsg);//puts an Object in the transient Map
         context.put(Constants.RESPONSE_KEY,respMsg);//so we can use it to modify in sender-response
         context.put(Constants.RESOURCE_KEY,isoSource);//without changing the original iso-msg
+
         space.out(queueN,context,timeout);//throwing into space is now accessible to the txnmgr.xml
         //as soon as we put the context obj to space it is picked up by txnmgr where it selects the participants
         return true;

@@ -5,7 +5,7 @@ import org.jpos.iso.ISOFilter;
 import org.jpos.iso.ISOMsg;
 import org.jpos.util.LogEvent;
 public class DelayFilter implements ISOFilter{
-    private int delay;
+    private final int delay;
     public DelayFilter(){
         delay = 0;
     }
@@ -18,7 +18,9 @@ public class DelayFilter implements ISOFilter{
         if (delay > 0) {
             try {
                 Thread.sleep (delay);
-            } catch (InterruptedException e) { }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         return isoMsg;
     }
